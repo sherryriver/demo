@@ -1,0 +1,32 @@
+<ion-view view-title="搜索" ng-show="goodsListShowFlag" style="margin-top: 12px;background-color:#8f8f8f; height: 1250%;">
+    <ion-content>
+        <div class="" style="padding:0;width: 100%;height:37px;position: relative;top: -1px;">
+            <div style="width: 50%;float: left;height:37px;">
+                <a style="width: 100%;display: block;" class="button button-stable">综合排序</a>
+            </div>
+            <div style="width: 50%;float: left;height:37px;">
+                <button style="width: 100%;display: block;" class="button button-stable" ng-click="shopPriceToggleSort()">
+                    价格排序<span id="shopPriceSortClassId"></span>
+                </button>
+            </div>
+        </div>
+        <ion-list show-delete="shouldShowDelete" show-reorder="shouldShowReorder" can-swipe="listCanSwipe" >
+            <ion-item ng-repeat="goods in goodsLists" class="item-thumbnail-left" style="white-space:normal;">
+                <img ng-src="{{goods.image}}">
+                <div class="">
+                    <div class="product-name">{{goods.goodsname}}</div>
+                    <div><span class="shopPrice">￥{{goods.shopprice}}</span>&nbsp;<span class="market_price_decor">市场价:{{goods.marketprice}}</span></div>
+                    <div class="reputation">
+                        <span class="ratings">已售18人</span>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-infinite-scroll
+                    distance="10%"
+                    icon="ion-loading-c"
+                    ng-if="moreGoodsDataCanBeLoaded()"
+                    on-infinite="loadMoreGoods()">
+            </ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

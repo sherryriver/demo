@@ -1,0 +1,61 @@
+<ion-view title="我">
+    <ion-content>
+        <!--<div class="profile-card">
+            <a href="#/tab/account/profile" class="avatar-container">
+                <img ng-src="{{ accountData.data.avatar }}" class="user-avatar" ng-if="accountData.data.avatar" />
+                <i class="icon ion-person user-avatar" ng-if="!accountData.data.avatar"></i>
+            </a>
+            <div class="profile-info">
+                <h5 ng-bind="accountData.data.nickname || accountData.data.phone || '加载中...'"></h5>
+                <a href="#/tab/app/integral">
+                    积分<br/>
+                    <em ng-bind="accountData.data.score || 0"></em>
+                </a>
+                <a href="#/tab/account/favorites">
+                    收藏<br/>
+                    <em ng-bind="accountData.data.favourite_count || 0"></em>
+                </a>
+            </div>
+        </div>-->
+        <div class="list account-menu">
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/orders">
+                <i class="icon ion-ios7-paper-outline"></i>
+                我的订单
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/address">
+                <i class="icon ion-ios7-filing-outline"></i>
+                收货地址管理
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+        </div>
+        <div class="list account-menu">
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/profile">
+                <i class="icon ion-ios7-person-outline"></i>
+                个人资料设置
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/password">
+                <i class="icon ion-ios7-locked-outline"></i>
+                密码修改
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+        </div>
+        <div class="list account-menu">
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/complain">
+                <i class="icon ion-ios7-flag-outline"></i>
+                投诉维权
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+            <a class="item item-icon-left item-icon-right" href="#/tab/account/about">
+                <i class="icon ion-ios7-information-outline"></i>
+                关于奉化100
+                <i class="icon ion-ios7-arrow-right"></i>
+            </a>
+        </div>
+        <button type="button" class="button button-block button-assertive button-logout" ng-click="logout()">
+            退出登录
+        </button>
+        <br/>
+    </ion-content>
+</ion-view>

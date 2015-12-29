@@ -1,0 +1,22 @@
+<ion-view view-title="搜索"  ng-show="shopsListShowFlag" style="margin-top: 32px;background-color:#8f8f8f;  height: 1250%;">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="shops in shopsLists" class="item-thumbnail-left" style="white-space:normal;">
+                <img ng-src="{{shops.image}}">
+                <div class="">
+                    <div class="product-name">{{shops.goodsname}}</div>
+                    <div><span class="shopPrice">￥{{shops.shopprice}}</span>&nbsp;<span class="market_price_decor">市场价:{{shops.marketprice}}</span></div>
+                    <div class="reputation">
+                        <span class="ratings">已售18人</span>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-infinite-scroll
+                    icon="ion-loading-c"
+                    ng-if="moreShopsDataCanBeLoaded()"
+                    on-infinite="loadMoreShops()"
+                    distance="10%">
+            </ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

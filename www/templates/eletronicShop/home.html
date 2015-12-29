@@ -1,0 +1,119 @@
+<ion-view view-title="首页" >
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon ion-ios-search-strong" ng-click="showFilterBar()">
+        </button>
+    </ion-nav-buttons>
+
+
+    <ion-content has-bouncing="true">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play=true does-continue=true slide-interval="2000">
+
+            <ion-slide>
+                <div class="firstPicture">
+                    <img class="ion-image" src="../../images/eletronicShop/1.jpg"/>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="firstPicture ">
+                    <img src="../../images/eletronicShop/2.jpg" />
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="firstPicture ">
+                    <img src="../../images/eletronicShop/3.jpg"/>
+                </div>
+            </ion-slide>
+
+        </ion-slide-box>
+        <div class="home-shortcut">
+            <a href="#/tab/market">
+                <img src="../../images/100/icon_market.png">
+                <p>超市</p>
+            </a>
+            <a href="#/tab/carryout">
+                <img src="../../images/100/icon_carryout.png">
+                <p>外卖</p>
+            </a>
+            <a href="#/tab/carryout?category=errands">
+                <img src="../../images/100/icon_buy.png">
+                <p>代买</p>
+            </a>
+            <a href="#/tab/carryout?category=freshs">
+                <img src="../../images/100/icon_fresh.png">
+                <p>生鲜</p>
+            </a>
+            <a href="#/tab/carryout?category=fruits">
+                <img src="../../images/100/icon_fruit.png">
+                <p>水果</p>
+            </a>
+            <a href="#/tab/carryout?category=conveniences">
+                <img src="../../images/100/icon_errands.png">
+                <p>便利店</p>
+            </a>
+        </div>
+
+        <h4 class="hot-store">热门商品</h4>
+        <div class="item row">
+            <div class="col col-25" style="padding-bottom: 0;">
+                <div class="shop_decor_goods_img">
+                    <img src="../../images/eletronicShop/icon.png" />
+                </div>
+
+            </div>
+            <div class="col col-25" style="padding-bottom: 0;">
+                <div class="shop_decor_goods_img">
+                    <img src="../../images/eletronicShop/icon.png" />
+                </div>
+
+            </div>
+            <div class="col col-25">
+                <div class="shop_decor_goods_img">
+                    <img ng-click="togt()" src="../../images/eletronicShop/icon.png" />
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="shop_decor_goods_img">
+                    <img ng-click="toggleFooter()" src="../../images/eletronicShop/icon.png" />
+                </div>
+            </div>
+        </div>
+
+        <h4 class="hot-store">热门店铺</h4>
+        <div class="list">
+
+            <a class="item item-thumbnail-left" ng-click="toGoodsdetail()">
+                <img ng-src="../../images/shopfront/3.png">
+                <h2>aj简版</h2>
+
+                <br>
+                <h4 style="color: red;">￥110.5</h4>
+                <h4 style="color: #B5B5B5;">20人付款</h4>
+            </a>
+
+            <a class="item item-thumbnail-left">
+                <img ng-src="../../images/shopfront/7.png">
+                <h2>科比简版</h2>
+                <br>
+                <h4 style="color: red;">￥130</h4>
+                <h4 style="color: #B5B5B5;">10人付款</h4>
+            </a>
+            <a class="item item-thumbnail-left">
+                <img ng-src="../../images/shopfront/6.png">
+                <h2>詹姆斯简版</h2>
+                <br>
+                <h4 style="color: red;">￥150</h4>
+                <h4 style="color: #B5B5B5;">3人付款</h4>
+            </a>
+            <a class="item item-thumbnail-left">
+                <img ng-src="../../images/shopfront/8.png">
+                <h2>杜兰特简版</h2>
+                <br>
+                <h4 style="color: red;">￥160</h4>
+                <h4 style="color: #B5B5B5;">1人付款</h4>
+            </a>
+
+        </div>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,76 @@
+<ion-view view-title="店铺首页" >
+    <ion-content header-shrink scroll-event-interval="5" has-bouncing="true">
+
+      <!--<div class="bar bar-header item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-android-search placeholder-icon "></i>
+          <input type="search" placeholder="搜索店铺内商品">
+        </label>
+        <button class="button button-clear" ng-click="searchShopGoods()">
+          确定
+        </button>
+      </div>-->
+
+      <div class="list card" ng-repeat="shopfront in shopFront">
+
+        <div class="item item-image">
+          <img src="{{shopfront.shopbigimage}}">
+        </div>
+
+        <div class="item item-avatar">
+          <img src="{{shopfront.shopimage}}">
+          <h2>{{shopfront.shopname}}</h2>
+          <p>{{shopfront.shopdescription}}</p>
+        </div>
+
+        <div class="row">
+          <div class="col" style="text-align:center;"><span>全部</span></br><span>{{shopfront.total}}</span></div>|
+          <div class="col" style="text-align:center;"><span>上新</span></br><span>{{shopfront.newgoods}}</span></div>|
+          <div class="col" style="text-align:center;"><span>推荐</span></br><span>{{shopfront.recommend}}</span></div>
+        </div>
+
+      </div>
+
+      <p style="color: red; text-align:center;">----------   店长推荐   -----------</p>
+
+      <!--<div class="list">
+        <div class="classify_decor_item_shop" ng-repeat="allgoods in shopgoods" >
+          <img class="full-image" ng-src="{{allgoods.pictureurl}}">
+          <p>{{allgoods.goodsname}}</p>
+          <p style="color: red;">￥{{allgoods.price}}</p>
+        </div>
+      </div>-->
+
+        <div class="list card">
+            <div class="row row-wrap">
+                <div class="col col-50" ng-repeat="allgoods in shopgoods">
+                    <img class="full-image" ng-src="{{allgoods.pictureurl}}" ui-sref="goodsdetail">
+                    <p>{{allgoods.goodsname}}</p>
+                    <p style="color: red;">￥{{allgoods.price}}</p>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <div class="tabs tabs-icon-left">
+      <!--<a class="tab-item" ng-click="morePopover.show($event)">
+        <i class="icon ion-android-menu"></i>
+        商品分类
+      </a>-->
+      <a class="tab-item" href="#/app/shopCategory">
+        <i class="icon ion-android-menu"></i>
+        商品分类
+      </a>
+
+      <a class="tab-item" href="#/app/shopgoodsSearch">
+        <i class="icon ion-search"></i>
+        商品搜索
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-social-whatsapp-outline"></i>
+        联系卖家
+      </a>
+    </div>
+
+</ion-view>

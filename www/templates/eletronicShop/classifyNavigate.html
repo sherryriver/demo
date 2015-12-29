@@ -1,0 +1,36 @@
+<ion-view view-title="分类导航">
+    <ion-content>
+        <div id="search-bar1" >
+            <div class="">
+                <label class="item-input-wrapper search_input" style="background: #f8f8f8;">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="搜索..." readonly="true" ng-click="toSearchState()">
+                </label>
+            </div>
+        </div>
+        <div class="classify_decor">
+            <div class="firstPicture text-center classify_decor_item" ng-repeat="classify in classifyLists" >
+                <img src="{{classify.imgUrl}}"/>
+                <span>{{classify.classifyname}}</span>
+            </div>
+            <ion-infinite-scroll
+                    distance="10%"
+                    icon="ion-loading-c">
+            </ion-infinite-scroll>
+        </div>
+    </ion-content>
+</ion-view>
+<style type="text/css">
+    #search-bar1 {
+        background: none;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        top:3px;
+        z-index: 3;
+    }
+    #search-bar1 .item {
+        background: none;
+        border: none;
+    }
+</style>

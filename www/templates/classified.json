@@ -1,0 +1,51 @@
+{
+  "message": "查询成功!",
+  "ret": 0,
+  "data": {
+    "total": 6,
+    "rows": [
+      {
+        "classified": 1,
+        "cparentid":0,
+        "classifyname": "家居家纺1",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      },
+      {
+        "classified": 2,
+        "cparentid":0,
+        "classifyname": "家居家纺2",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      },
+      {
+        "classified": 3,
+        "cparentid":0,
+        "classifyname": "家居家纺3",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      },
+      {
+        "classified": 3,
+        "cparentid":0,
+        "classifyname": "家居家纺3",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      },
+      {
+        "classified": 4,
+        "cparentid":0,
+        "classifyname": "家居家纺4",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      },
+      {
+        "classified": 12,
+        "cparentid":0,
+        "classifyname": "家居家纺12",
+        "createtime":"2015-7-29",
+        "imgUrl":"./images/eletronicShop/clothes.jpg"
+      }
+    ]
+  }
+}

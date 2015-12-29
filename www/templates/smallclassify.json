@@ -1,0 +1,29 @@
+{
+  "message": "查询成功!",
+  "ret": 0,
+  "data": {
+    "total": 4,
+    "rows": [
+      {
+        "classified": 1,
+        "classifyname": "篮球鞋",
+        "createtime":"2015-7-29"
+      },
+      {
+        "classified": 2,
+        "classifyname": "跑鞋",
+        "createtime":"2015-7-29"
+      },
+      {
+        "classified": 3,
+        "classifyname": "休闲鞋",
+        "createtime":"2015-7-29"
+      },
+      {
+        "classified": 3,
+        "classifyname": "球星专柜",
+        "createtime":"2015-7-29"
+      }
+    ]
+  }
+}

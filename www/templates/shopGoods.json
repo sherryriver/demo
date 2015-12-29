@@ -1,0 +1,57 @@
+{
+  "message": "查询成功!",
+  "ret": 0,
+  "data": {
+    "total": 6,
+    "rows": [
+        {
+          "goodsid": 1,
+          "goodsname":"科比简版",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 1,
+          "pictureurl": "../../images/shopfront/3.png",
+          "price":"500"
+        },
+        {
+          "goodsid": 2,
+          "goodsname":"aj简版",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 1,
+          "pictureurl": "../../images/shopfront/8.png",
+          "price":"550"
+        },
+        {
+          "goodsid": 3,
+          "goodsname":"韦德之道",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 1,
+          "pictureurl": "../../images/shopfront/11.png",
+          "price":"500"
+        },
+        {
+          "goodsid": 4,
+          "goodsname":"ai简版",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 1,
+          "pictureurl": "../../images/shopfront/6.png",
+          "price":"500"
+        },
+        {
+          "goodsid": 5,
+          "goodsname":"詹姆斯简版",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 2,
+          "pictureurl": "../../images/shopfront/7.png",
+          "price":"400"
+        },
+        {
+          "goodsid": 6,
+          "goodsname":"詹姆斯11简版",
+          "createdtime": "2015-07-06 21:28:15",
+          "enableflag": 2,
+          "pictureurl": "../../images/shopfront/7.png",
+          "price":"400"
+        }
+    ]
+  }
+}

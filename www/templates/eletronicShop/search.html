@@ -1,0 +1,71 @@
+<ion-view class="" view-title="搜索" style="">
+    <ion-nav-buttons>
+        <!--<div class="item-input  item-input-wrapper" style="">
+            <input  type="text" placeholder="搜索..." style=""/>
+        </div>
+        <div side="right">
+            <button class="button button-icon icon-search" menu-toggle="right" ng-click="">
+                搜索
+            </button>
+        </div>-->
+
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="">
+            <div class="list row" style="padding:0;">
+                <div class="item col col-50">
+                    <button class="button button-small button-assertive search_button" ng-click="shopsSearchClick()">
+                        <i class="icon ion-search"></i>搜店铺
+                    </button>
+                </div>
+                <div class="item col col-50">
+                    <button class="button button-small button-assertive search_button" ng-click="goodsSearchClick()">
+                        <i class="icon ion-search"></i>搜商品
+                    </button>
+                </div>
+            </div>
+            <div id="search-bar" >
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper search_input" id="search-input">
+                        <i class="icon ion-search placeholder-icon"></i>
+                        <input type="text" placeholder="输入搜索关键词..." ng-model="query" ng-change="" class="">
+                    </label>
+                </div>
+            </div>
+            <!--<div class="row" style="padding-bottom:0px;  margin-top:32px;" ng-show="true">
+                <div class="col col-50" >
+                    综合排序
+                </div>
+                <div class="col col-50" >
+                    价格排序
+                </div>
+            </div>-->
+        </div>
+        <ion-nav-view name="goodsList" style="min-height: 100%;"></ion-nav-view>
+        <ion-nav-view name="shopsList" style="min-height: 100%;"></ion-nav-view>
+    </ion-content>
+</ion-view>
+
+<style type="text/css">
+    #search-input {
+        text-align: center;
+    }
+    #search-bar {
+        background: none;
+        position: absolute;
+        width: 100%;
+        top: 44px;
+        height: 10px;
+        z-index: 3;
+    }
+    #search-bar .item {
+        background: none;
+        border: none;
+    }
+    .item-input-inset{
+        padding: 0px;
+    }
+    .item-input-wrapper{
+        background-color: #E7E7E7;
+    }
+</style>

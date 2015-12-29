@@ -1,0 +1,66 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar bar-header bar-assertive">
+            <ion-nav-back-button class="">
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            <!--<ion-nav-buttons side="right">
+                <a class="button button-icon button-clear ion-search" menu-toggle="right" ng-click="toSearchState()">
+                </a>
+            </ion-nav-buttons>-->
+        </ion-nav-bar>
+
+        <ion-nav-view name="menuContent"></ion-nav-view>
+
+        <ion-tabs class="tabs-icon-top tabs-color-active-positive "  delegate-handle="main-tabs"  ng-hide="hideTabs">
+
+            <ion-tab title="首页" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="app.home">
+
+            </ion-tab>
+
+            <ion-tab title="搜索" icon-on="ion-ios-search-strong" icon-off="ion-ios-search" ui-sref="app.classifyNavigate">
+
+            </ion-tab>
+
+            <ion-tab title="购物车" icon-on="ion-ios-cart" icon-off="ion-ios-cart-outline" ui-sref="app.layout">
+
+            </ion-tab>
+
+            <ion-tab title="我的" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" ui-sref="app.my">
+
+            </ion-tab>
+
+        </ion-tabs>
+
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" is-enabled=true  width=130 scroll=false>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">菜单栏</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <!--<ion-item ng-repeat="classify in classifyLists">
+                    <span class="menu_font_decor">{{classify.classifyname}}</span>
+                </ion-item>-->
+                <ion-item menu-close ng-click="login()">
+                    Login
+                </ion-item>
+                <ion-item menu-close href="#/app/search">
+                    Search
+                </ion-item>
+                <ion-item menu-close href="#/app/browse">
+                    Browse
+                </ion-item>
+                <ion-item menu-close href="#/app/playlists">
+                    Playlists
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>

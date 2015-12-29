@@ -1,0 +1,78 @@
+<ion-view view-title="商品" >
+    <!--<ion-nav-title on-hold="doRefresh()">商品</ion-nav-title>-->
+
+    <ion-nav-buttons side="right">
+      <button class="button header-replies-button">
+        联系卖家
+      </button>
+    </ion-nav-buttons>
+
+    <ion-content header-shrink scroll-event-interval="5" has-bouncing="true">
+
+      <div class="firstPicture ">
+        <img src="../../images/shopfront/3.png" />
+        <p style="text-align:center;">
+          不是正品打死我 aj款全网最低价 限时打折
+        </p>
+        <p style="color: red; text-align:center;">
+          ￥110.5
+        </p>
+      </div>
+
+
+      <!--<a class="button button-light icon-right ion-chevron-right button-full" ng-click="goShopFront()">
+        <i class="icon ion-android-home"></i>
+        T-MAC店铺
+      </a>-->
+
+      <div class="item item-icon-left item-icon-right item-avatar" ng-click="goShopFront()">
+          <img src="../../images/shopfront/5.png">
+          T-MAC店铺
+          <i class="icon ion-ios-arrow-right"></i>
+      </div>
+<br>
+      <p style="color: red; text-align:center;">----------   商品介绍   -----------</p>
+      <p>
+        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+        the content is from a card-body consisting of an image and paragraph text. The footer
+        consists of tabs, icons aligned left, within the card-footer.
+      </p>
+      <div class="firstPicture ">
+        <img src="../../images/shopfront/9.png">
+        <img src="../../images/shopfront/10.png">
+      </div>
+      <br>
+      <p style="color: red; text-align:center;">----------   相关商品   -----------</p>
+
+      <div class="list card">
+        <div class="row">
+          <div class="col col-50">
+            <img ng-click="goodsdetail()" class="full-image" src="../../images/shopfront/7.png">
+            <p>科比简版</p>
+            <p style="color: red;">￥500</p>
+          </div>
+
+          <div class="col col-50">
+            <img class="full-image" src="../../images/shopfront/8.png">
+            <p>hd2015简版</p>
+            <p style="color: red;">￥500</p>
+          </div>
+
+        </div>
+      </div>
+
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark" style="opacity:0.8;">
+      <a class="button button-stable">
+        <span class="ion-ios-cart"></span>
+        加入购物车
+      </a>
+
+      <a class="button button-assertive" ng-click="purchase()">
+        <span class="ion-bag"></span>
+        立即购买
+      </a>
+    </div>
+
+</ion-view>

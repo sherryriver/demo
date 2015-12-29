@@ -1,0 +1,19 @@
+{
+  "message": "查询成功!",
+  "ret": 0,
+  "data": {
+    "total": 1,
+    "rows": [
+      {
+        "shopid": "1",
+        "shopname": "t-mac店铺",
+        "shopdescription": "全店包邮",
+        "shopimage": "../../images/shopfront/5.png",
+        "shopbigimage": "../../images/shopfront/2.png",
+        "total":5,
+        "newgoods":2,
+        "recommend":5
+      }
+    ]
+  }
+}
